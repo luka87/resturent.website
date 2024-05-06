@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Quicksand", sans-serif;;
+}  
+ul{
+    list-style: none;
+} 
+a{
+    text-decoration: none;
+}
+
+
+/*utility classes*/
+.primary-text{
+    color: #e4b95b
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+
+
+/*heder start*/
+header{
+    height: 100vh;
+    background-image: url('./img/home_bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background: rgb(0, 0, 0, 0.6);
+}
+header * {
+    z-index: 1;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar .logo{
+    width: 80px;
+    margin-left: 100px;
+}
+.navbar ul{
+    display: flex;
+    margin-right: 100px;
+}
+
+.navbar ul li{
+
+}
+
+.navbar ul li a {
+    padding: 15px 25px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.navbar ul li a:hover{
+    border-bottom: 2px solid #e4b95b;
+}
+
+header .content{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 75%;
+}
+
+
+header .content h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: aliceblue;
+}
+header .content p{
+    margin: 20px 0 40px ;
+    text-transform: capitalize;
+    color: white;
+}
+
+.btn-primary{
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+    font-weight: 500;
+    font-size: 18px;
+}
+.btn-primary:hover{
+    background-color: #e4b95b;
+    color:black;
+}
+
+
+/*heder end*/
+
+
+/*about*/
+.container{
+    width: 90%;
+    margin: auto;
+}
+#about{
+    padding: 40px 0;
+}
+
+.title{
+    
+    margin-bottom: 30px;
+    text-align: center;
+}
+.title h2 {
+    
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.title p{
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px ;
+}
+.about-content img{
+    width: 450px;
+}
+
+.about-content p{
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-right: 7rem;
+    color: #9a9a9a;
+    line-height: 1.6;
+    font-weight: 600;
+}
+.btn-secondary{
+    color: #fff;
+    background: #383848;
+    transition: all 0.5s ease;
+}
+.btn-secondary:hover{
+    background-color: #e4b95b;
+    color: black;
+}
+
+/*about end*/
+#offers{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background: url('./img/offer-background.jpg') center/cover fixed;
+    color: azure;
+}
+
+
+
+.offers-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.offers-items h3,
+#menu h3{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.offers-items p,
+#menu p
+{
+    line-height: 1.4;
+    font-size: 18px;
+    color: #9a9a9a;
+ margin: 0 10px 10px 10px ;
+}
+.offers-items span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+
+/*menu section*/
+#menu{
+    background: f4f4f4;
+    padding: 5rem 0;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.menu-item{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-item h3{
+    position: relative;
+}
+.menu-item span{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+#menu .btn{
+    background: #e4b95b;
+    color: #fff;
+    display: block;
+    margin:20px auto 0;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+#menu .btn:hover{
+    background-color: #383848;
+}
+
+
+#day-time{
+    background: url('./img/daytime_bg.jpeg') center/cover fixed;
+    color: #fff;
+    text-align: center;
+}
+
+.times{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0 0;
+    height: 40vh;
+}
+
+
+#gallary {
+    background: url('./img/offer-background.jpg') center/cover fixed;
+    padding-top: 20px;
+}
+
+#gallary img{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: .8;
+    transition: all .8s ease;
+    
+}
+#gallary img:hover{
+    opacity: 1;
+}
+
+
+#gallary h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: azure;
+
+}
+
+.img-gallary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#contact{
+    padding: 5rem;
+    background: f4f4f4;
+}
+
+.contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-info{
+    width: 50%;
+}
+
+.contact-info div{
+    margin: 20px 0;
+    line-height: 1.6;
+    text-transform: capitalize;
+    font-weight: 600;
+
+}
+
+.contact-info h3{
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+
+i{
+    margin-right: 5px;
+    color: #e4b95b;
+    font-size: 20px;
+}
+
+
+.contact-info a i{
+    color: #fff;    
+    background-color: #383848;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 25px;
+   
+}
+
+.contact-info a i:hover{
+    background-color: #e4b95b;
+    color: #383848;
+}
+form{
+    width:50%;
+}
+
+ input, textarea{
+    width: 100%;
+    display: block;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #e4b95b;
+
+
+}
+#contact .btn{
+    background-color: #e4b95b;
+    color: #fff;
+    cursor: pointer;
+    transition: all .6s ease;
+    padding:10px 40px;
+    font-size: 20px;
+
+
+}
+#contact .btn:hover{
+    background-color: #383848;
+}
+
+#footer{
+    background-color: #383848;
+    padding: 15px 0 ;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
